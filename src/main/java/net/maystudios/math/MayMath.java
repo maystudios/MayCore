@@ -1,5 +1,10 @@
 package net.maystudios.math;
 
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.math.MathContext;
+import java.math.RoundingMode;
+
 /**
  * {@code MayMath} is a standard Math lib to calcualte several Math operations
  * like:
@@ -110,4 +115,6 @@ public class MayMath {
     public static double Sine(double x) {
         return Cosine(x - PI / 2, 11);
     }
+
+
 }
