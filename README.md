@@ -7,7 +7,9 @@ MayCore is a powerful graphical render engine designed to create GPU-based simul
 ## Features
 
 - **Water Simulation**: Realistic water simulation to visualize fluid dynamics.
+- ![Logo](docs/img/wall-functions-water-treatment.png)
 - **Flow Fields**: Create flow field simulations to visualize vector fields.
+- ![Logo](docs/img/l_cfd-main_20160401160645.png)
 - **Collision Detection**: Advanced collision and soft collision detection features.
 - **Parallel Processing**: Utilizes parallel processing techniques for enhanced performance.
 
