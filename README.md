@@ -38,3 +38,7 @@ Feel free to contribute to MayCore by optimizing code, enhancing features, or re
 
 MayCore is licensed under the Apache License 2.0.
 
+## Authors
+
+- [@maystudios](https://www.github.com/maystudios)
+
