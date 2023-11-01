@@ -1,5 +1,7 @@
 # MayCore: Java Simulation Engine
 
+![Logo](docs/img/MayStudios_FullName.png)
+
 MayCore is a powerful graphical render engine designed to create GPU-based simulations using OpenGL. It specializes in various simulations such as collision tests, water simulations, flow fields, and more, leveraging the capabilities of parallel processing.
 
 ## Features
