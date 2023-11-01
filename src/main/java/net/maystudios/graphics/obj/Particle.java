@@ -5,12 +5,12 @@ import net.maystudios.graphics.forms.BaseForms;
 
 public class Particle {
     public int radius;
-    public Object.Position position2D;
+    public Object.Vektor position2D;
     public Object.Velocity velocity2D;
 
     public Object.Type type = Object.Type.Particle;
 
-    public Particle(int radius, Object.Position pos, Object.Velocity vel) {
+    public Particle(int radius, Object.Vektor pos, Object.Velocity vel) {
         this.radius = radius;
         this.position2D = pos;
         this.velocity2D = vel;
@@ -37,7 +37,7 @@ public class Particle {
     }
 
     public void draw(int id) {
-        BaseForms.drawCircle(radius, position2D.x, position2D.y, 8, id);
+        BaseForms.drawCircle(radius, (int) position2D.x, (int) position2D.y, 8, id);
     }
 
     public String toString() {

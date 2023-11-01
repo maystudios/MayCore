@@ -71,11 +71,11 @@ public class Renderer {
         return Math.sqrt((a.position2D.x * b.position2D.x) + (a.position2D.y * b.position2D.y));
     }
 
-    private double magnitude(Object.Position v ) {
+    private double magnitude(Object.Vektor v ) {
         return Math.sqrt((v.x * v.x) + (v.y * v.y));
     }
 
-    private Object.Position normalize(Object.Position v) {
-        return new Object.Position(v.x / magnitude(v), v.y / magnitude(v));
+    private Object.Vektor normalize(Object.Vektor v) {
+        return new Object.Vektor(v.x / magnitude(v), v.y / magnitude(v));
     }
 }

@@ -24,18 +24,11 @@ public class BaseForms {
         for (int i = 0; i <= num_segments; i++) {
             double angle = Math.PI * 2 * i / num_segments;
 
-            // Change color for each triangle
-
-
-
             long seed = 100;
             Random random = new Random(id * seed);
-
             float r = random.nextFloat();
-
             random = new Random(2 * id * seed);
             float g = random.nextFloat();
-
             random = new Random(3 * id * seed);
             float b = random.nextFloat();
             glColor3f(r, g, b);

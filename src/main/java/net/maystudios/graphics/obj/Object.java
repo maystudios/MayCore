@@ -10,11 +10,11 @@ public class Object {
         NormalObj
     }
 
-    public static class Position {
-        public int x;
-        public int y;
+    public static class Vektor {
+        public double x;
+        public double y;
 
-        public Position(int x, int y) {
+        public Vektor(double x, double y) {
             this.x = x;
             this.y = y;
         }
@@ -39,7 +39,7 @@ public class Object {
         }
     }
 
-    public Position position2D;
+    public Vektor position2D;
     public Velocity velocity2D;
 
     public Particle particle;

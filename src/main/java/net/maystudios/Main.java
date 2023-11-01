@@ -26,7 +26,7 @@ public class Main {
             int vx = (int) (Math.random() * (4 - -4 + 1) + -4);
             int vy = (int) (Math.random() * (4 - -4 + 1) + -4);
 
-            Particle p = new Particle(radius, new Object.Position(x, y), new Object.Velocity(0, 0));
+            Particle p = new Particle(radius, new Object.Vektor(x, y), new Object.Velocity(0, 0));
 
             renderer.addParticle(p);
         }
