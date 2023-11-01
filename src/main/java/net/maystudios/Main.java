@@ -1,5 +1,9 @@
 package net.maystudios;
 
+import net.maystudios.graphics.Renderer;
+import net.maystudios.graphics.Window;
+import net.maystudios.graphics.obj.Object;
+import net.maystudios.graphics.obj.Particle;
 import net.maystudios.math.MayMath;
 import net.maystudios.math.MayMath_P;
 
@@ -8,21 +12,26 @@ import java.math.BigInteger;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(MayMath.Cosine(2, 11));
-        for (int i = 0; i < Math.pow(2,16); i++) {
-            //BigDecimal x = new BigDecimal(100);
-            //x.divide(new BigDecimal((double) i));
 
-            double y1 = MayMath.Cosine(i, 33);
-            double y2 = Math.cos(i);
-            //BigDecimal y3 = MayMath_P.Cosine(new BigDecimal(2),300);
+        Renderer renderer = Renderer.getRenderer();
 
-            System.out.println("MayMath:   " + y1);
+        int minRadius = 10;
+        int maxRadius = 50;
 
-            System.out.println("Math:      " + y2);
+        for (int i = 0; i < 2000; i++) {
+            int radius = (int) (Math.random() * (maxRadius - minRadius + 1) + minRadius);
+            int x = (int) (Math.random() * (1920 - 0 + 1) + 0);
+            int y = (int) (Math.random() * (1080 - 0 + 1) + 0);
 
-            //System.out.println("MayMath_P: " + y3);
+            int vx = (int) (Math.random() * (4 - -4 + 1) + -4);
+            int vy = (int) (Math.random() * (4 - -4 + 1) + -4);
 
+            Particle p = new Particle(radius, new Object.Position(x, y), new Object.Velocity(0, 0));
+
+            renderer.addParticle(p);
         }
+
+        renderer.run();
+
     }
 }
