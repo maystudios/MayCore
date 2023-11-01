@@ -38,7 +38,7 @@ Feel free to contribute to MayCore by optimizing code, enhancing features, or re
 
 ## License
 
-MayCore is licensed under the Apache License 2.0.
+MayCore is licensed under the Apache License 2.0 [LICENSE](LICENSE)-File.
 
 ## Authors
 
