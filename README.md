@@ -11,6 +11,13 @@ MayCore is a powerful graphical render engine designed to create GPU-based simul
 - **Collision Detection**: Advanced collision and soft collision detection features.
 - **Parallel Processing**: Utilizes parallel processing techniques for enhanced performance.
 
+## Roadmap
+
+- Create Renderer
+- Make workflow easier
+- Parallize all things
+- add additional functions
+
 ## Installation
 
 MayCore is provided as source code and is structured as an IntelliJ project. Clone the repository and open it using IntelliJ IDEA to get started.
