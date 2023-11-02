@@ -18,7 +18,11 @@ public class Particle {
 
     public void tick(int id) {
         updateCirclePosition();
-        draw(id);
+
+        double color = (double) (Math.pow(velocity2D.x, 2) + Math.pow(velocity2D.y, 2)) / 8 * 8;
+        color = Math.pow(color, 2) / 64;
+        float[] rgb = {0, 0, (float) color / 3};
+        draw(rgb);
     }
 
     private void updateCirclePosition() {
@@ -36,8 +40,9 @@ public class Particle {
         }
     }
 
-    public void draw(int id) {
-        BaseForms.drawCircle(radius, (int) position2D.x, (int) position2D.y, 8, id);
+    public void draw(float[] rgb) {
+
+        BaseForms.drawCircle(radius, (int) position2D.x, (int) position2D.y, 100, rgb);
     }
 
     public String toString() {
